@@ -1,0 +1,56 @@
+{
+  "captured_at": "2026-11-05T13:52:50.645691+00:00",
+  "application": {
+    "format_version": 1,
+    "id": "app.imalkav.light_scenes",
+    "name": "Light Scenes",
+    "version": "0.1.0",
+    "api_version": "27.14.0",
+    "author": "iMalkav",
+    "description": "Activate your selected lighting scenes with confirmation.",
+    "heap_size_kib": 384,
+    "debug": false
+  },
+  "firmware": {
+    "version": "r1051",
+    "target": 21,
+    "branch": "dev",
+    "build_date": "2026-10-30",
+    "commit_hash": "6ee64ba1",
+    "intercom_version": "6ee64ba1",
+    "nwp_version": "1611.2.1.1.255.11.71",
+    "matter_version": "1.0"
+  },
+  "api_version": "27.15.0",
+  "method": "GET /api/screen?display=0 and display=1; base64 decoded and saved as PNG without resizing or retouching",
+  "settings": {
+    "version": 1,
+    "values": {
+      "source_url": "",
+      "token": "",
+      "refresh_s": 30,
+      "provider": "json",
+      "scenes": "Evening=scene.evening;Work=scene.work"
+    }
+  },
+  "inputs": [],
+  "data_note": "Default scene names are displayed. No command was sent to a smart-home system.",
+  "fixture": null,
+  "frames": [
+    {
+      "path": "screenshots/front.png",
+      "width": 72,
+      "height": 16,
+      "frame_sha256": "bedd77d7860f10a79d01b037e576421ff0e0879f95775ab4d86d3f8ddbd370d7",
+      "png_sha256": "2e5d1e9392fbe8cb48d11ac34ad407cdf5ca3dde693c9758e7589c68c040bbab"
+    },
+    {
+      "path": "screenshots/back.png",
+      "width": 160,
+      "height": 80,
+      "frame_sha256": "a8f521716901037a6ef4133d637f4b7e87196b038c3b0f53b62e113ce4e659da",
+      "png_sha256": "add2512c06b336bd4c86ef3756866199675badb096ede682da399adc48464904"
+    }
+  ],
+  "verification": "Installed, launched, captured both displays, then quit via the device API. This is not comprehensive physical-device testing or verification on the latest release firmware."
+}
